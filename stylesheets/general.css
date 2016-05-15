@@ -1,0 +1,1 @@
+body:before{white-space:pre;font-family:monospace;content:"Error: Undefined mixin 'span'.\A         on line 2 of /home/user/documents/work/wrk/src/stylesheets/general.scss, in `span'\A         from line 2 of /home/user/documents/work/wrk/src/stylesheets/general.scss\A \A 1: .general {\A 2:   @include span(12);\A 3:   background-color: #000000;\A 4:   height: 200px;\A 5: }"}
