@@ -1,0 +1,216 @@
+.about_theme
+  +clearfix()
+  ul
+    margin: 0
+    padding: 0
+
+  li
+    +span(3)
+    padding: 85px 0
+    text-align: center
+    font-family: $fontMontserratBold
+    font-size: 20px
+    list-style-type: none
+    display: inline-block
+    &:nth-child(even)
+      border-top: 6px solid #ffffff
+      background-color: $mainGreenColor
+      color: #ffffff
+    &:nth-child(odd)
+      border-top: 6px solid $mainGreenColor
+      background-color: #1c2a33
+      color: $mainGreenColor
+
+  i
+    background-image: url('../images/theme-sprites.png')
+    width: 99px
+    height: 106px
+    background-position: 0 0
+    display: inline-block
+    &.push_img
+      background-position: 632px 9px
+    &.diamond
+      background-position: 760px 6px
+    &.light
+      background-position: 879px 0
+    &.devices
+      background-position: 1000px 0
+
+.features
+  +clearfix()
+  padding-top: 90px
+  padding-bottom: 100px
+
+  .features_header_wrapper
+    +span(6)
+    margin-left: span(3)
+
+  h3
+    text-align: center
+    @extend %whiteBgHeader
+
+  .features_divider
+    @extend %divider
+    margin-left: 43%
+    margin-bottom: 70px
+
+  ul
+    margin: 0
+    padding: 0
+
+  li
+    list-style-type: none
+    +span(4)
+
+    h4
+      color: #717171
+      line-height: 40px
+      font-family: $fontMontserratBold
+      font-size: 18px
+      display: inline-block
+      margin-top: 5px
+      margin-bottom: 13px
+      &:hover
+        color: $mainGreenColor
+
+    i
+      float: left
+      margin-right: 15px
+      margin-top: 10px
+      width: 33px
+      height: 33px
+      display: inline-block
+      background-image: url('../images/features-sprites.png')
+      background-position: 0 0
+
+    //selector: li:nth-child(n) i
+    &:nth-child(2) i
+      background-position: -32px 0
+
+    &:nth-child(3) i
+      background-position: -69px 0
+
+    &:nth-child(4) i
+      background-position: -102px 0
+
+    &:nth-child(5) i
+      background-position: -143.5px 0
+
+    &:nth-child(6) i
+      background-position: -177px 0
+
+    &:nth-child(7) i
+      background-position: -210px 0
+
+    &:nth-child(8) i
+      background-position: -249px 0
+
+    &:nth-child(9) i
+      background-position: -286px 0
+
+    p
+      font-family: $fontMontserratLight
+      font-size: 14px
+      color: #777777
+      line-height: 25px
+
+.about_wrapper
+  background-color: #090f14
+  padding-top: 95px
+  padding-bottom: 100px
+  color: #ffffff
+  img
+    float: left
+    width: 867px
+  ul
+    margin: 0
+    padding: 0
+
+  li
+    list-style-type: none
+
+.about
+  +span(5 last)
+  padding-left: 0
+  padding-right: 0
+
+  h3
+    @extend %blackBgHeader
+    margin-top: 0
+    margin-bottom: 34px
+
+  .about_divider
+    @extend %divider
+    margin-left: 32%
+    margin-bottom: 50px
+
+  .skills_list
+    margin-bottom: 35px
+    li
+      display: inline-block
+      &:not(:last-child)
+        margin-right: 20px
+      &.active
+        a
+          color: $mainGreenColor
+          border-top: 2px solid $mainGreenColor
+
+      a
+        font-size: 16px
+        font-family: $fontMontserratBold
+        line-height: 42px
+        text-transform: uppercase
+        text-decoration: none
+        color: #ffffff
+        padding: 10px 0
+
+  .skills_progress
+    li
+      border-radius: 8px
+      width: 100%
+      height: 39px
+      line-height: 39px
+      border: 1px solid #959595
+      &:not(:last-child)
+        margin-bottom: 15px
+      &:nth-child(1)
+        div
+          background-color: #9c5da5
+          width: 40%
+      &:nth-child(2)
+        div
+          background-color: #11b0de
+          width: 50%
+      &:nth-child(3)
+        div
+          width: 80%
+          background-color: #d67f7f
+      &:nth-child(4)
+        div
+          width: 60%
+          background-color: #20bc9d
+      &:nth-child(5)
+        div
+          width: 90%
+          background-color: #bb8a36
+
+      div
+        padding-left: 15px
+        border-radius: 8px
+        margin-top: -1px
+        height: 41px
+        margin-left: -1px
+
+      span
+        vertical-align: middle
+        font-size: 13px
+        font-family: $fontMontserratRegular
+        line-height: 27px
+        color: #ffffff
+        text-transform: uppercase
+
+
+
+
+
+

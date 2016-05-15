@@ -1,0 +1,110 @@
+.header_wrapper
+  background-color: $headerBgColor
+  padding-bottom: 20px
+  padding-top: 25px
+
+.main_header
+  padding-left: 0
+  padding-right: 0
+
+.logo
+  +span(3)
+  padding-left: 0
+  padding-right: 0
+
+.navigation
+  +span(7 last)
+  padding: 15px 0 0 0
+  margin-left: +span(2)
+  text-align: right
+
+  .navigation_list
+    margin: 0
+    padding: 0
+
+    li
+      list-style-type: none
+      display: inline-block
+      &:not(:last-child)
+        margin-right: 10px
+        position: relative
+        &.active
+          &:after
+            position: absolute
+            bottom: -39px
+            left: 0
+            content: ' '
+            display: inline
+            width: 100%
+            height: 5px
+            background-color: $mainGreenColor
+
+    a
+      font-family: $fontMontserratBold
+      font-size: 13px
+      line-height: 42px
+      text-transform: uppercase
+      text-decoration: none
+      color: $headerLinkColor
+      &:hover
+        color: $headerLinkHoverColor
+
+    .search_icon
+      font-size: 13px
+      color: $headerLinkColor
+      cursor: pointer
+      &:hover
+        color: $headerLinkHoverColor
+
+.greeting_wrapper
+  background-color: $headerGreetingBgColor
+  +clearfix()
+
+.header_greeting
+  +span(8)
+  margin-left: +span(2)
+  padding: 0
+  text-align: center
+  padding-top: 245px
+  padding-bottom: 245px
+  color: #ffffff
+  font-family: $fontMontserratBold
+
+  h1, h2, h3
+    text-transform: uppercase
+  h2
+    display: inline-block
+    font-size: 35px
+    margin: 0
+    line-height: 9.53px
+    &.green_header
+      color: $mainGreenColor
+
+  h1
+    font-size: 79px
+    color: #ffffff
+    line-height: 84.24px
+    font-weight: bold
+    margin-top: 20px
+    margin-bottom: 0
+
+  h3
+    font-family: $fontMontserratLight
+    font-size: 34px
+    line-height: 84.24px
+    color: #d4d4d4
+    margin-top: 0
+    text-transform: none
+
+  .greeting_buttons
+    margin-top: 125px
+
+  .button-explore, .button-purchase
+    @extend %common_button
+    background-color: $mainGreenColor
+
+  .button-purchase
+    background-color: #00cbf6
+    margin-left: 30px
+
+

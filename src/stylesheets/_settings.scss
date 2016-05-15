@@ -1,0 +1,21 @@
+@import "susy";
+
+$susy: (
+        columns: 12,
+        gutters: 1/4,
+        container: 1170px,
+        math: fluid,
+        output: float,
+        gutter-position: inside,
+        debug: (
+                image: hide,
+                color: rgba(#66f, .25),
+                output: background,
+                toggle: top right,
+        ),
+);
+
+.container {
+  @include container($susy);
+}
+

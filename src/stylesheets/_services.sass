@@ -1,0 +1,132 @@
+.services
+  padding-top: 100px
+  padding-bottom: 100px
+  h3
+    @extend %whiteBgHeader
+    margin-top: 0
+    text-align: center
+
+.services_divider
+  @extend %divider
+  display: block
+  margin: 30px auto 60px auto
+
+.accordion_list
+  padding-left: 0
+  text-align: center
+
+  li
+    display: inline-block
+    &:last-child
+      span
+        border-right: 1px solid #eeeeef
+
+    &.active span
+      background-color: $mainGreenColor
+      color: #ffffff
+      position: relative
+      &:after
+        bottom: -10px
+        left: 45%
+        position: absolute
+        content: ""
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 10px 10px 0
+        border-color: $mainGreenColor transparent transparent transparent
+
+  span
+    transition: background-color, .8s ease-in
+    cursor: pointer
+    margin-left: -5px
+    padding: 20px 41px
+    text-align: center
+    border: 1px solid #eeeeef
+    border-right: none
+    font-family: $fontMontserratRegular
+    font-size: 16px
+    line-height: 39.02px
+    color: #717171
+    background-color: #f8fcfe
+
+@keyframes img-from-left
+  0%
+    margin-left: -500px
+  100%
+    margin-left: 0
+
+@keyframes show-descr
+  0%
+    visibility: hidden
+    opacity: 0
+  100%
+    visibility: visible
+    opacity: 1
+
+.services_text
+  margin-top: 50px
+  text-align: justify
+  overflow: hidden
+  display: none
+  &.show
+    display: block
+    .services_img
+      animation: img-from-left 1s ease
+      margin-left: 0
+    p
+      animation: show-descr 1.5s ease-in-out
+      visibility: visible
+      opacity: 1
+  .services_img
+    margin-left: -500px
+    margin-top: 21px
+    margin-bottom: 15px
+    margin-right: 40px
+    width: 194px
+    height: 140px
+    background-color: darken(#efefef, 20%)
+    float: left
+  p
+    visibility: hidden
+    opacity: 0
+    font-family: $fontMontserratLight
+    font-size: 13.66px
+    line-height: 24.39px
+    margin-top: 0
+    color: #777777
+    font-weight: 100
+
+//==================================================================================
+// purchase
+//==================================================================================
+
+
+.purchase_wrapper
+  padding-top: 100px
+  padding-bottom: 100px
+  background-color: #40474b
+  text-align: center
+  h3
+    font-size: 40px
+    color: $mainGreenColor
+    line-height: 40.46px
+    font-family: $fontMontserratBold
+    text-transform: uppercase
+    margin: 0
+  p
+    font-family: $fontMontserratRegular
+    font-size: 16px
+    line-height: 40px
+    color: #d8d8d8
+    margin-top: 30px
+  input
+    @extend %common_button
+    background-color: $mainGreenColor
+    margin-top: 70px
+
+//==================================================================================
+// End of purchase
+//==================================================================================
+
+

@@ -1,0 +1,157 @@
+.works_wrapper
+  padding-top: 100px
+  border-bottom: 1px solid #e1e1e1
+  background-color: #f8fcfe
+  ul
+    margin: 0
+    padding: 0
+  li
+    list-style-type: none
+
+.works
+  +span(8)
+  padding-left: 0
+  padding-right: 0
+  margin-left: +span(2.5)
+  h3
+    margin: 0
+    text-align: center
+    @extend %whiteBgHeader
+  .works_divider
+    @extend %divider
+    margin-left: 43%
+    margin-top: 30px
+
+  .works_list
+    margin: 70px 0 70px 70px
+    +clearfix()
+
+    li
+      float: left
+      &:not(:last-child)
+        a
+          border-right: none
+      a
+        font-family: $fontMontserratRegular
+        text-decoration: none
+        padding: 15px
+        line-height: 42px
+        font-size: 14px
+        color: #717171
+        border: 1px solid #ebebeb
+        display: inline-block
+        min-width: 72px
+        text-align: center
+        background-color: #ffffff
+        &.active
+          color: #4dd6b8
+          border-top: 2px solid $mainGreenColor
+
+@keyframes drop-description
+  0%
+    margin-top: -300px
+  80%
+    margin-top: 40px
+  100%
+    margin-top: 0
+
+
+
+@keyframes left-tag
+  0%
+    margin-left: -300px
+    visibility: hidden
+
+  100%
+    margin-left: 0
+    visibility: visible
+
+.works_images
+  clear: both
+
+  .portfolio_item
+    +span(3)
+    overflow: hidden
+    height: 207px
+    margin-bottom: 1px
+    padding: 0
+    &:nth-child(odd)
+      background-color: #24413e
+    &:nth-child(even)
+      background-color: #8a8a8a
+    &.active
+      border-top: 4px solid $mainGreenColor
+    &:hover .portfolio_hover
+      display: block
+      background-color: #ffffff
+
+  .portfolio_item_icons
+    animation: drop-description .8s ease
+    width: 100%
+    padding-top: 45px
+    div
+      cursor: pointer
+      width: 41px
+      height: 40px
+      border-radius: 50%
+      border: 1px solid $mainGreenColor
+      display: inline-block
+      text-align: center
+      margin-left: 33%
+      line-height: 41px
+      font-size: 14px
+      color: $mainGreenColor
+      &:nth-child(2)
+        color: #ffffff
+        margin-left: 10px
+        background-color: $mainGreenColor
+    & div:first-of-type
+      i
+        transform: rotateX(180deg)
+
+  .portfolio_item_text
+    text-align: center
+    h5
+      margin: 25px 0 0 0
+      text-transform: uppercase
+      font-size: 14px
+      line-height: 24.87px
+      font-family: $fontMontserratBold
+      color: $mainGreenColor
+    .tag
+      font-size: 12px
+      line-height: 24.87px
+      font-family: $fontMontserratLight
+      color: #8a8a8a
+
+  .portfolio_hover
+    background-color: rgba(#f8fcfe, .8)
+    height: 100%
+    border: 2px solid #f8fcfe
+    display: none
+
+.portfolio_load
+  margin-left: span(5.2)
+  margin-top: 70px
+  margin-bottom: 100px
+  +span(1.8)
+  font-family: $fontMontserratBold
+  height: 60px
+  background-color: $mainGreenColor
+  border: none
+  border-radius: 7px
+  outline: none
+  color: #ffffff
+  line-height: 60px
+  font-size: 14px
+  text-transform: uppercase
+
+  &:hover
+    i
+      transition: all .5s ease
+      transform: rotate(360deg)
+
+  span
+    margin-left: 5px
+    font-size: 15px
+

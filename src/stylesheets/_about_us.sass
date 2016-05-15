@@ -1,0 +1,136 @@
+.about_us_wrapper
+  background-color: #2e404d
+  padding-top: 100px
+  padding-bottom: 50px
+
+.about_us
+  h3
+    @extend %blackBgHeader
+    text-align: center
+    margin: 0
+
+  .about_us_divider
+    @extend %divider
+    display: block
+    margin: 0 auto
+    margin-top: 35px
+
+  .icons_wrapper
+    text-align: center
+    margin-top: 60px
+  .quotes
+    color: $mainGreenColor
+    font-size: 20px
+    height: 35px
+    width: 45px
+    background-position: -209px 0
+    display: inline-block
+    background-image: url("../images/stats-sprites.png")
+  p
+    margin: 0
+    margin-top: 40px
+    text-align: center
+    font-family: $fontMontserratLight
+    font-size: 16px
+    line-height: 30px
+    color: #bbbbbb
+
+.about_us_list
+  height: 500px
+  width: 310px
+  margin: 0 auto
+  ul
+    margin: 0
+    padding: 0
+  li
+    list-style-type: none
+    p
+      margin: 0
+
+.about_item
+  line-height: 27px
+  margin-top: 45px
+  .about_item_name
+    font-family: $fontMontserratBold
+    font-size: 16px
+    color: $mainGreenColor
+    text-transform: uppercase
+    font-weight: bold
+  .about_item_who
+    font-family: $fontMontserratLight
+    font-size: 13px
+    color: #bbbbbb
+
+  .about_item_img
+    width: 145px
+    height: 145px
+    background-color: #878787
+    margin: 25px auto 0
+    border-radius: 50%
+    border: 4px solid $mainGreenColor
+    box-shadow: 0 0 3px 6px rgba($mainGreenColor, .5)
+
+//==================================================================================
+// slider
+//==================================================================================
+
+
+.slick-slide
+  outline: none !important
+.about_us
+  ul.slick-dots
+    bottom: 55px
+
+    li
+      width: 60px
+      height: 60px
+      background-color: #878787
+      margin: 25px auto 0
+      border-radius: 50%
+      box-shadow: 0 0 3px 3px rgba($mainGreenColor, .5)
+      &.slick-active
+        border: 4px solid $mainGreenColor
+      &:not(:last-child)
+        margin-right: 15px
+      button
+        display: none
+  .slick-prev
+    left: 0
+
+.about_us ul.slick-dots li.slick-active
+  transition: margin .2s ease
+  margin-bottom: 15px
+
+.about_us_list_wrapper
+  position: relative
+
+.prev_button, .next_button
+  z-index: 2
+  top: 400px
+  position: absolute
+  width: 30px
+  height: 30px
+  text-align: center
+  border: 1px solid #bbbbbb
+  color: #bbbbbb
+  line-height: 31px
+  cursor: pointer
+  &:hover
+    background-color: $mainGreenColor
+    border: 1px solid $mainGreenColor
+    color: #ffffff
+  &:active
+    color: #ffffff
+    background-color: lighten($mainGreenColor, 30%)
+    border: 1px solid $mainGreenColor
+
+.prev_button
+  left: 410px
+
+.next_button
+  right: 330px
+
+//==================================================================================
+// End of slider
+//==================================================================================
+

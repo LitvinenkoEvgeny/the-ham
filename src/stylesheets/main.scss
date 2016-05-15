@@ -1,0 +1,30 @@
+@import "compass";
+@import "normalize";
+//==================================================================================
+// modules
+//==================================================================================
+@import "font-awesome-compass";
+@import "font-awesome";
+@import "modules/slick-carousel/slick/slick";
+@import "modules/slick-carousel/slick/slick-theme";
+
+//@import "breakpoint";
+
+@import "settings";
+@import "fonts";
+@import "common";
+@import "styles";
+
+@import "head";
+@import "general";
+@import "portfolio";
+@import "services";
+@import "news";
+@import "pricing";
+@import "about_us";
+
+//==================================================================================
+// End of modules
+//==================================================================================
+
+

@@ -1,0 +1,210 @@
+.news_wrapper
+  padding-top: 100px
+  padding-bottom: 100px
+
+.news
+  h3
+    @extend %whiteBgHeader
+    text-align: center
+    margin: 0
+  .news_divider
+    @extend %divider
+    display: block
+    margin: 0 auto
+    margin-top: 30px
+
+.news_list
+  ul
+    margin: 0
+    margin-top: 35px
+    padding: 0
+  li
+    +span(2.8)
+    margin-right: +span(.2)
+    margin-top: 30px
+    padding: 0
+    &:nth-child(4n)
+      +span(2.8 last)
+      margin-right: 0
+      margin-top: 30px
+      padding: 0
+
+.article
+  border: 1px solid #ececec
+  background-color: #f8fcfe
+  cursor: pointer
+  &:hover
+    .article_date
+      transition: background-color .4s ease
+      background-color: $mainGreenColor
+    .article_name
+      transition: color .4s ease
+      color: $mainGreenColor
+
+  .article_img
+    background-color: #9e9e9e
+    height: 225px
+
+  .article_date
+    background-color: #203e38
+    padding: 11px 0
+    float: right
+    text-align: center
+    width: 68px
+    font-family: $fontMontserratRegular
+    font-size: 16px
+    color: #ffffff
+    p
+      margin: 0
+    .month
+      margin-top: 6px
+
+  .article_descr
+    padding: 15px 15px 10px 15px
+    line-height: 39px
+
+    h4
+      margin: 0
+      font-family: $fontMontserratBold
+      font-size: 18px
+      font-weight: bold
+      color: #203e38
+
+    span
+      font-size: 14px
+      font-family: $fontMontserratLight
+      font-weight: 300
+      color: #777777
+      &.author
+        margin-right: 10px
+        padding-right: 10px
+        border-right: 1px solid #777777
+
+@keyframes scale-on-hover
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.3)
+  100%
+    transform: scale(1)
+
+@keyframes scale-little-on-hover
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(.9)
+  100%
+    transform: scale(1)
+
+.stats
+  +clearfix()
+  ul
+    margin: 0
+    padding: 0
+
+  li
+    float: left
+    width: 25%
+
+    .stats_item_img
+      animation: scale-on-hover 2s ease-in-out
+      animation-iteration-count: infinite
+    .stats_inner_div
+      animation: scale-little-on-hover 2s ease-in-out
+      animation-iteration-count: infinite
+    &:nth-child(odd)
+      background-color: #25333c
+    &:nth-child(even)
+      background-color: $mainGreenColor
+    &:nth-child(1)
+      .stats_item_img
+        animation-delay: .5s
+    &:nth-child(2)
+      .stats_item_img
+        animation-delay: 1s
+      i
+        background-position: -47px 0
+    &:nth-child(3)
+      .stats_item_img
+        animation-delay: 1.5s
+      i
+        background-position: -105px 0
+    &:nth-child(4)
+      .stats_item_img
+        animation-delay: 2s
+      .stats_inner_div
+        animation-delay: .5s
+      i
+        background-position: -160px -2px
+        margin-left: 0
+        margin-top: 33px
+
+
+  h5, p
+    margin: 0
+
+.stats_item
+  text-align: center
+  padding-top: 65px
+  padding-bottom: 20px
+
+  &:nth-child(odd)
+    border-top: 5px solid $mainGreenColor
+    .stats_item_img
+      border: 1px solid $mainGreenColor
+    .stats_inner_div
+      background-color: $mainGreenColor
+    .stats_item_descr
+      color: $mainGreenColor
+  &:nth-child(even)
+    border-top: 5px solid #25333c
+    .stats_item_img
+      border: 1px solid #25333c
+    .stats_inner_div
+      background-color: #25333c
+    .stats_item_descr
+      color: #25333c
+
+  .stats_item_img
+    width: 165px
+    height: 165px
+    margin: 0 auto
+    border-radius: 50%
+    background-color: transparent
+    vertical-align: middle
+
+  .stats_inner_div
+    width: 111px
+    height: 111px
+    margin: 0 auto
+    border-radius: 50%
+    vertical-align: middle
+    margin-top: 29px
+    text-align: center
+
+  i
+    display: inline-block
+    margin-top: 35px
+    margin-left: 7px
+    width: 43px
+    height: 38px
+    background-image: url("../images/stats-sprites.png")
+    background-position: 0 0
+
+  .stats_item_descr
+    margin-top: 40px
+    line-height: 42px
+    h5
+      color: #ffffff
+      font-size: 36px
+      font-family: $fontMontserratRegular
+    p
+      font-family: $fontMontserratLight
+      font-size: 18px
+
+
+
+
+
+
+

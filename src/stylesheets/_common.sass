@@ -1,0 +1,62 @@
+// fonts
+$fontMontserratLight: "MontserratLight", arial, sans-serif
+$fontMontserratBold: 'MontserratBold', arial, sans-serif
+$fontMontserratRegular: 'MontserratRegular', arial, sans-serif
+
+
+// colors
+$mainGreenColor: #18cfab
+$headerBgColor: #44433e
+$headerGreetingBgColor: #3c3c3c
+$lightGreenColor: #f8fcfe
+$headerLinkColor: #b8b8b8
+$headerLinkHoverColor: #23b999
+
+
+
+
+
+%common_button
+  width: 166px
+  height: 61px
+  border: none
+  border-top: 3px solid #ffffff
+  border-radius: 6px
+  // 61px - 3 px of border
+  line-height: 59px
+  color: #ffffff
+  text-transform: uppercase
+  font-size: 13px
+  font-family: $fontMontserratBold
+
+
+%divider
+  position: relative
+  width: 76px
+  height: 1px
+  background-color: rgba($mainGreenColor, .5)
+  display: inline-block
+  &:after
+    position: absolute
+    content: ''
+    top: 5px
+    left: 10px
+    display: inline-block
+    width: 76px
+    height: 1px
+    background-color: $mainGreenColor
+
+
+%whiteBgHeader
+  color: #4e4e4e
+  font-size: 36px
+  line-height: 40px
+  font-family: $fontMontserratRegular
+
+
+%blackBgHeader
+  @extend %whiteBgHeader
+  color: #ffffff
+
+ul
+  list-style-type: none
