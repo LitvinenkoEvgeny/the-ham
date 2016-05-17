@@ -1,0 +1,63 @@
+.form_section_wrapper
+  +clearfix()
+  padding: 100px 0
+
+.right_map
+  width: 765px
+  height: 549px
+  background-color: #9e9e9e
+  float: left
+
+.form_section
+  +span(6 of 12 last)
+  padding: 0 10px
+
+  form, input, button, textarea
+    +span(1 of 1)
+    padding: 0
+
+  form, input, textarea
+
+  input, textarea
+    border: 1px solid #d4e0de
+    padding: 20px
+    margin-top: 15px
+    font-family: $fontMontserratLight
+    font-weight: 100
+    line-height: 19.01px
+
+  textarea
+    height: 185px
+
+  label
+    display: none
+
+.form_section_head
+  +span(6 of 12)
+  padding: 0
+
+  h3
+    @extend %whiteBgHeader
+    margin: 0 0 30px
+
+  .form_section_divider
+    @extend %divider
+    display: block
+    margin: 0 0 30px 90px
+
+.send_btn
+  margin-top: 41px
+  background-color: $mainGreenColor
+  text-transform: uppercase
+  font-weight: bold
+  font-family: $fontMontserratBold
+  font-size: 14.01px
+  line-height: 55px
+  color: #ffffff
+  border: none
+  border-bottom: 5px solid #08bf9b
+  text-align: left
+  border-radius: 5px
+  height: 55px
+  span
+    margin-left: 170px

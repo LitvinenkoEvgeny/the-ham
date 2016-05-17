@@ -1,0 +1,220 @@
+.about_template_wrapper
+  padding: 100px 0
+  background-color: $mainBlueColor
+
+.about_theHam
+  +span(3)
+
+  font-family: $fontMontserratLight
+  font-weight: 100
+  line-height: 26px
+  font-size: 14px
+  color: #b2b2b2
+
+  p
+    margin: 0
+
+  h4
+    margin: 0
+    font-size: 40px
+    line-height: 9.53px
+    color: #ffffff
+    font-family: $fontMontserratRegular
+    span
+      font-family: $fontMontserratBold
+      font-weight: bold
+      color: $mainGreenColor
+
+  .theHam_descr
+    margin-top: 38px
+
+  .contact_info
+    margin-top: 60px
+
+    p:first-child
+      font-weight: bold
+
+  .contact_phone
+    margin-top: 40px
+    p
+      font-weight: bold
+    span
+      font-weight: normal
+
+
+
+%about_section_header
+  margin: 0 0 20px 0
+  text-transform: uppercase
+  font-family: $fontMontserratBold
+  font-weight: bold
+  color: #ffffff
+  font-size: 18px
+  line-height: 26px
+
+
+
+.about_recent
+  +span(4)
+
+
+  h5
+    @extend %about_section_header
+
+  ul
+    margin: 0
+    padding: 0
+
+  li
+    padding: 30px 0
+    &:not(:last-child)
+      border-bottom: 1px solid #294453
+    &:first-child
+      padding-top: 0
+
+
+
+  .recent_article
+    font-family: $fontMontserratLight
+    font-weight: 100
+    line-height: 25px
+    font-size: 14px
+    color: #b2b2b2
+    p
+      margin: 0
+
+  .recent_article_img
+    width: 77px
+    height: 66px
+    margin-top: 8px
+    margin-bottom: 30px
+    background-color: #959595
+    display: inline-block
+    float: left
+    margin-right: 15px
+
+
+  .recent_article_name
+    @extend %about_section_header
+    display: inline-block
+    cursor: pointer
+    font-size: 16px
+    line-height: 36.48px
+    margin-bottom: 0
+    &:hover
+      color: $mainGreenColor
+
+  .recent_article_descr
+    margin: 5px 0
+
+  .recent_article_date
+    color: #f1f1f1
+
+
+
+
+
+
+
+
+.about_tags
+  +span(3)
+  font-family: $fontMontserratLight
+  font-weight: 100
+  line-height: 26px
+  font-size: 14px
+  color: #b2b2b2
+
+  ul
+    margin: 0
+    padding: 0
+    +clearfix()
+    border-bottom: 1px solid #294453
+    padding-bottom: 35px
+
+  li
+    display: inline-block
+    padding: 5px 20px
+    margin-bottom: 5px
+    cursor: pointer
+    border: 1px solid #d7d7d7
+    &.active
+      border-color: $mainGreenColor
+      background-color: $mainGreenColor
+      color: #ffffff
+
+  h5
+    @extend %about_section_header
+
+
+.subscribe
+  h5
+    line-height: 40px
+    margin-top: 35px
+
+  p
+    margin-top: 40px
+
+  form
+    margin-top: 20px
+
+    label
+      display: none
+
+  input
+    padding: 15px
+    background-color: #22353f
+    border: none
+    font-family: $fontMontserratLight
+    color: #757575
+    float: left
+
+  .subscribe_input
+    width: 190px
+
+  .subscribe_btn
+    background-color: #294453
+    color: $mainGreenColor
+    text-transform: uppercase
+    font-weight: bold
+    font-family: $fontMontserratBold
+    &:hover
+      transition: background-color .2s ease-in-out
+      background-color: rgba(#294453, .8)
+
+
+
+
+
+
+
+.about_feed
+  +span(2)
+  h5
+    @extend %about_section_header
+
+  .flicke_img
+    float: left
+    width: 75px
+    height: 75px
+    background-color: #959595
+    margin-right: 7px
+    margin-bottom: 7px
+
+
+
+.footer_wrapper
+  background-color: #22353f
+  padding: 50px 0
+
+
+.footer_text
+  font-size: 14px
+  line-height: 26px
+  color: #aeaeae
+  font-family: $fontMontserratLight
+  font-weight: lighter
+  text-align: center
+  margin: 0
+  .green_span
+    color: $mainGreenColor

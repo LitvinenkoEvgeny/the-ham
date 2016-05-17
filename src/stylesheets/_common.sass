@@ -11,10 +11,17 @@ $headerGreetingBgColor: #3c3c3c
 $lightGreenColor: #f8fcfe
 $headerLinkColor: #b8b8b8
 $headerLinkHoverColor: #23b999
+$mainBlueColor: #233641
 
 
 
 
+
+@keyframes buttonScale
+  from
+    transform: scale(1)
+  to
+    transform: scale(1.1)
 
 %common_button
   width: 166px
@@ -28,6 +35,9 @@ $headerLinkHoverColor: #23b999
   text-transform: uppercase
   font-size: 13px
   font-family: $fontMontserratBold
+  &:hover
+    animation: buttonScale .5s ease-in-out infinite alternate
+    box-shadow: 1px 1px 21px 2px #fff
 
 
 %divider

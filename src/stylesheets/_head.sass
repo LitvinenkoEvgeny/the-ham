@@ -60,6 +60,30 @@
   background-color: $headerGreetingBgColor
   +clearfix()
 
+@keyframes showSecondHeaderText
+  0%
+    font-size: 0
+  80%
+    font-size: 82px
+  100%
+    font-size: 79px
+
+@keyframes showFirstHeaderText
+  0%
+    font-size: 0
+  80%
+    font-size: 45px
+  100%
+    font-size: 35px
+
+@keyframes showThirdHeaderText
+  0%
+    font-size: 0
+  80%
+    font-size: 35px
+  100%
+    font-size: 34px
+
 .header_greeting
   +span(8)
   margin-left: +span(2)
@@ -77,6 +101,7 @@
     font-size: 35px
     margin: 0
     line-height: 9.53px
+    animation: showFirstHeaderText .5s 1s ease-out both
     &.green_header
       color: $mainGreenColor
 
@@ -87,6 +112,7 @@
     font-weight: bold
     margin-top: 20px
     margin-bottom: 0
+    animation: showSecondHeaderText .5s 1.5s ease-out both
 
   h3
     font-family: $fontMontserratLight
@@ -95,6 +121,7 @@
     color: #d4d4d4
     margin-top: 0
     text-transform: none
+    animation: showThirdHeaderText .5s 2s ease-out both
 
   .greeting_buttons
     margin-top: 125px

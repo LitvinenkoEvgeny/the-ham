@@ -1,0 +1,178 @@
+.team_wrapper
+  padding: 100px 0
+  ul
+    margin: 0
+    padding: 0
+
+.team_header
+  @extend %whiteBgHeader
+  margin: 0
+  padding: 0
+  text-align: center
+
+.team_divider
+  @extend %divider
+  display: block
+  margin: 40px auto 70px
+
+.team_item_hover
+  position: relative
+  opacity: 0
+  visibility: hidden
+  height: 100%
+  background-color: #8c9aa3
+
+  .team_hover_outer
+    position: absolute
+    margin: auto
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 85px
+    height: 85px
+    border-radius: 50%
+    border: 1px solid $mainGreenColor
+
+  .team_hover_inner
+    cursor: pointer
+    position: absolute
+    margin: auto
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #f4f5f6
+    width: 71px
+    height: 71px
+    text-align: center
+    line-height: 71px
+    color: $mainGreenColor
+    font-size: 55px
+    border-radius: 50%
+    transition: transform .3s ease-in-out
+    transform: scale(1)
+    &:hover
+      transition: transform .3s ease-in-out
+      transform: scale(1.2)
+
+.team_item
+  +span(2.8)
+  background-color: #2e4a5b
+  margin: 0 10px
+  padding: 0
+  &:last-child
+    margin-right: 0
+  &:hover
+    transition: background-color .5s ease
+    background-color: $mainGreenColor
+    .team_item_hover
+      transition: opacity .5s ease, visibility .5s ease-in-out
+      opacity: 1
+      visibility: visible
+    .team_member_work
+      color: #2e4a5b
+
+.team_item_img
+  height: 230px
+  background-color: #ebebeb
+
+.team_item_descr
+  line-height: 38.95px
+  padding: 20px 10px 10px 25px
+  p
+    margin: 0
+  .team_member_name
+    cursor: default
+    font-size: 16px
+    color: #ffffff
+    font-family: $fontMontserratBold
+  .team_member_work
+    cursor: default
+    color: $mainGreenColor
+    font-size: 13px
+    font-family: $fontMontserratLight
+
+.team_social
+  text-align: center
+  li
+    +span(3)
+    border: 1px solid #ffffff
+    border-right: none
+    &:last-child
+      border-right: 1px solid #ffffff
+    &:first-child
+      border-left: none
+    a
+      padding: 20px 24px
+      display: inline-block
+      color: #ffffff
+
+//==================================================================================
+// product section
+//==================================================================================
+
+.product_wrapper
+  background: url("../images/check-bg.png") no-repeat bottom left $mainBlueColor
+  padding: 100px 0 255px 0
+
+.product_head
+  text-align: center
+  line-height: 65px
+  text-transform: uppercase
+  h3
+    @extend %blackBgHeader
+    font-weight: 900
+    margin: 0
+    font-family: $fontMontserratBold
+    font-size: 51px
+    color: #ffffff
+  h4
+    @extend %blackBgHeader
+    margin: 30px 0 0 0
+    color: $mainGreenColor
+    font-weight: 400
+    font-family: $fontMontserratRegular
+    font-size: 47px
+
+.check_list
+  padding: 0
+  float: right
+  margin: 120px 220px 0 0
+  color: #f7f7f7
+  font-size: 14px
+  line-height: 35px
+  font-family: $fontMontserratLight
+  li
+    cursor: pointer
+    &:hover
+      span
+        transition: font-weight .3s ease
+        font-weight: bold
+      i
+        transform: scale(1.2)
+
+  i
+    transition: transform .3s ease-in-out
+    background-color: $mainGreenColor
+    width: 24px
+    height: 24px
+    line-height: 24px
+    border-radius: 50%
+    text-align: center
+    color: $mainBlueColor
+    margin-right: 20px
+
+.puchase_btn
+  clear: both
+  float: right
+  @extend %common_button
+  background-color: $mainGreenColor
+  margin: 70px 280px 0 0
+
+//==================================================================================
+// End of product section
+//==================================================================================
+
+
+

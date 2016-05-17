@@ -8,12 +8,15 @@
 @import "modules/slick-carousel/slick/slick";
 @import "modules/slick-carousel/slick/slick-theme";
 
-//@import "breakpoint";
+@import "breakpoint";
+
+
 
 @import "settings";
 @import "fonts";
 @import "common";
 @import "styles";
+
 
 @import "head";
 @import "general";
@@ -22,6 +25,14 @@
 @import "news";
 @import "pricing";
 @import "about_us";
+@import "team";
+@import "form";
+@import "about_template";
+
+
+
+@import "responsive";
+
 
 //==================================================================================
 // End of modules
