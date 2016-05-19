@@ -86,6 +86,7 @@
 
   .features
     padding-top: 30px
+
   .features .features_header_wrapper
     +span(1 of 1)
     padding: 0 5%
@@ -104,6 +105,9 @@
   .features li
     +span(1 of 1)
     padding: 0 5px
+
+  .features li p
+    text-align: center
 
   .about_theme li, .features li h4
     margin-bottom: 0
@@ -169,7 +173,6 @@
   .works_images .portfolio_item_icons div
     margin-left: 0
 
-
   .portfolio_load
     float: left
     width: 60%
@@ -189,6 +192,9 @@
     transition: background-color .2s ease-in
     border-right: 1px solid #eeeeef
 
+  .accordion_list li.active span:after
+    left: 50%
+
   .services_text.show
     padding: 0 10px
 
@@ -206,9 +212,13 @@
 
   .news_list li, .news_list li:nth-child(4n)
     +span(1 of 1)
-    padding: 0 5%
+    padding: 0
+
+  .about_us_wrapper
+    clear: both
 
   .stats
+    +clearfix()
     +span(1 of 1)
     padding: 0 5px
 
@@ -251,7 +261,7 @@
     clear: both
     background-color: #ffffff
     +span(1 of 1)
-    padding: 0 5%
+    padding: 50px 5%
 
   .pricing_item
     +span(1 of 1)
@@ -323,8 +333,7 @@
   .check_list
     +span(1 of 1)
     padding: 0
-    margin: 0
-    margin-bottom: 30px
+    margin: 20px 0 30px
 
   .check_list li:hover
     transition: margin .2s ease
@@ -378,4 +387,174 @@
   .about_tags
     margin-bottom: 40px
 
+  .subscribe form
+    margin: 20px auto 0
+    display: inline-block
+    text-align: center
+
++breakpoint($tablets, $susyTablets)
+  @keyframes showFirstHeaderText
+    0%
+      font-size: 0
+    100%
+      font-size: 30px
+
+  @keyframes showSecondHeaderText
+    0%
+      font-size: 0
+    100%
+      font-size: 45px
+
+  @keyframes showThirdHeaderText
+    0%
+      font-size: 0
+    100%
+      font-size: 30px
+
+  .container
+    +container($susyTablets)
+
+  .logo
+    +span(12)
+    text-align: center
+
+  .navigation
+    +span(12)
+    margin-left: 0
+    text-align: center
+
+  .navigation .navigation_list li:not(:last-child).active:after
+    bottom: 0
+
+  .header_greeting
+    padding: 85px 0
+
+  .header_greeting h3
+    line-height: 54px
+
+  .about_theme li
+    height: 220px
+    padding: 25px 0
+
+  .features
+    padding: 40px 0
+
+  .about_wrapper img
+    display: none
+
+  .about
+    +span(12)
+
+  .about h3
+    text-align: center
+
+  .about .about_divider
+    margin: 0 auto 50px
+    display: block
+
+  .about .skills_list
+    text-align: right
+
+  .works
+    +span(12)
+    text-align: center
+    margin-left: 0
+
+  .works .works_list
+    margin: 70px auto
+    display: inline-block
+
+  .works .works_divider
+    margin: 30px auto 0
+    display: block
+    text-align: center
+
+  .works_images .portfolio_item
+    +span(4)
+    padding: 0
+
+  .works_images .portfolio_item_icons
+    text-align: center
+
+  .works_images .portfolio_item_icons div
+    margin-left: 0
+
+  .works_wrapper ul
+    +clearfix()
+
+  .features li
+    margin-bottom: 20px
+
+  .header_greeting .greeting_buttons
+    margin-top: 65px
+
+  .portfolio_load
+    width: 25%
+
+  .services
+    +span(12)
+
+  .accordion_list span
+    padding: 20px 8px
+
+  .purchase_wrapper
+    h3, p
+      +span(12)
+
+  .news_list li, .news_list li:nth-child(4n)
+    +span(4)
+    margin-right: 0
+
+  .stats li
+    +span(6)
+
+  .pricing_item
+    +span(5.4)
+    padding: 0
+    margin: 10px
+
+  .pricing_item:not(:last-child)
+    border: 1px solid #e1e1e1
+
+  .pricing_item:nth-child(1), .pricing_item:nth-child(3)
+    margin-right: span(.5)
+
+  li.pricing_item.offer
+    transform: none
+
+  .next_button
+    right: 180px
+
+  .prev_button
+    left: 180px
+
+  .team_item
+    +span(5)
+    padding: 0
+    margin: 10px 30px
+
+  .right_map
+    display: none
+
+  .form_section_head
+    +span(12)
+    text-align: center
+
+  .form_section_head .form_section_divider
+    margin: 0 auto 90px
+
+
+  .form_section
+    +span(12)
+
+
+  .about_theHam, .about_recent, .about_tags, .about_feed
+    +span(6)
+
++breakpoint($desktop, $susy)
+  .about_wrapper img
+    width: 667px
+
+  .right_map
+    width: 585px
 

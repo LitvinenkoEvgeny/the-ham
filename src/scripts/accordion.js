@@ -41,10 +41,11 @@ class Accordion {
     this.spanTextContent = document.querySelector("li.accordion_item span").textContent;
     if(this.spanTextContent) this.showTextForSpan();
     document.addEventListener('click', this.clickOnSpan.bind(this));
-    if(getViewport()[0] <= 800 ) this.moveActiveToBottom();
+    this.moveActiveToBottom();
   }
 
   moveActiveToBottom(){
+    if(getViewport()[0] > 800) return;
     let active = document.querySelector('.accordion_list .active');
     let ul = document.querySelector('.accordion_list');
     ul.appendChild(active);

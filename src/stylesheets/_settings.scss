@@ -1,9 +1,26 @@
 @import "susy";
 
 $phones: 250px 800px;
+$tablets: 800px 1200px;
+$desktop: 1200px 1500px;
 
 $susyMobile: (
         columns: 1,
+        gutters: 1/4,
+        container: 100%,
+        math: fluid,
+        output: float,
+        gutter-position: inside,
+        debug: (
+                image: hide,
+                color: rgba(#66f, .25),
+                output: background,
+                toggle: top right,
+        ),
+);
+
+$susyTablets: (
+        columns: 12,
         gutters: 1/4,
         container: 100%,
         math: fluid,
