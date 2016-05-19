@@ -1,1 +1,381 @@
++breakpoint($phones, $susyMobile)
+
+  @keyframes showFirstHeaderText
+    0%
+      font-size: 0
+    80%
+      font-size: 35px
+    100%
+      font-size: 30px
+
+  @keyframes showSecondHeaderText
+    0%
+      font-size: 0
+    100%
+      font-size: 45px
+
+  @keyframes showThirdHeaderText
+    0%
+      font-size: 0
+    80%
+      font-size: 25px
+    100%
+      font-size: 30px
+
+  .container
+    +container($susyMobile)
+
+  .main_header
+    text-align: center
+
+  .logo
+    +span(1 of 1)
+    padding: 0 5%
+
+  .navigation
+    +span(1 of 1)
+    padding: 0
+    margin: 0
+
+  .navigation .navigation_list li:not(:last-child)
+    display: block
+    text-align: center
+    margin-right: 0
+
+  .navigation .navigation_list li
+    display: none
+
+  .navigation .navigation_list li:not(:last-child).active:after
+    bottom: 0
+
+  .header_greeting
+    float: none
+    margin: 0 auto
+    padding: 75px 0
+
+  .header_greeting h2
+    line-height: 50px
+
+  .header_greeting h1
+    font-size: 45px
+
+  .header_greeting h3
+    font-size: 34px
+    line-height: 60px
+
+  .header_greeting .greeting_buttons
+    margin-top: 35px
+
+  .about_theme li
+    +span(1 of 1)
+
+  .about_theme i.push_img
+    background-position: 642px 9px
+
+  .about_theme i.light
+    background-position: 871px 0
+
+  .header_greeting .button-purchase
+    margin: 30px 0 0
+
+  .about_theme li:nth-child(odd)
+    border: none
+
+  .about_theme li:nth-child(even)
+    border: none
+
+  .features
+    padding-top: 30px
+  .features .features_header_wrapper
+    +span(1 of 1)
+    padding: 0 5%
+    float: none
+    margin: 0 auto
+    display: block
+    text-align: center
+
+    h3
+      line-height: 55px
+      margin: 0 0 20px
+
+  .features .features_divider
+    margin: 0 auto 70px
+
+  .features li
+    +span(1 of 1)
+    padding: 0 5px
+
+  .about_theme li, .features li h4
+    margin-bottom: 0
+
+  .about_wrapper img
+    display: none
+
+  .about
+    +span(1 of 1)
+    padding: 0 5%
+
+  .about h3
+    font-size: 27px
+    text-align: center
+
+  .about .skills_list li:not(:last-child)
+    margin-right: 10px
+
+  .about .skills_list li a
+    font-size: 11px
+
+  .about .skills_progress li span
+    font-size: 12px
+
+  .works_wrapper
+    padding-top: 50px
+    +clearfix()
+
+  .works
+    +span(1 of 1)
+    padding: 0 5%
+    margin: 0 auto
+    text-align: center
+
+  .works .works_divider
+    margin-left: 0
+
+  .works .works_list
+    margin: 70px 0
+
+  .works .works_list li
+    +span(1 of 1)
+    padding: 0
+
+  .works .works_list li a
+    +span(1 of 1)
+    padding: 0
+    width: 100%
+    min-width: 0
+    border-right: 1px solid #ebebeb
+
+  .works .works_list li:not(:last-child) a
+    border-right: 1px solid #ebebeb
+    margin-bottom: 2px
+
+  .works_images .portfolio_item
+    +span(1 of 1)
+    padding: 0
+
+  .portfolio_item_icons
+    text-align: center
+
+  .works_images .portfolio_item_icons div
+    margin-left: 0
+
+
+  .portfolio_load
+    float: left
+    width: 60%
+    margin-left: 18.33333%
+
+  .services
+    padding: 50px 0
+
+  .accordion_list li
+    +span(1 of 1)
+    padding: 0 5%
+    margin-bottom: 10px
+
+  .accordion_list span
+    +span(1 of 1)
+    padding: 0
+    transition: background-color .2s ease-in
+    border-right: 1px solid #eeeeef
+
+  .services_text.show
+    padding: 0 10px
+
+  .services_text .services_img
+    width: 100%
+
+  .services_text
+    clear: both
+
+  .news_wrapper, .purchase_wrapper
+    padding: 50px 5%
+
+  .purchase_wrapper input
+    margin-top: 30px
+
+  .news_list li, .news_list li:nth-child(4n)
+    +span(1 of 1)
+    padding: 0 5%
+
+  .stats
+    +span(1 of 1)
+    padding: 0 5px
+
+  .stats li
+    +span(1 of 2)
+    padding: 25px 0
+
+  .stats_item .stats_item_img
+    width: 50px
+    height: 50px
+
+  .stats_item .stats_inner_div
+    width: 30px
+    height: 30px
+    margin: 10px auto 0
+
+  .stats_item i
+    margin-top: -4px
+    margin-left: -5px
+    transform: scale(.4)
+
+  .stats li:nth-child(2) i
+    background-position: -48px 0
+
+  .stats li:nth-child(4) i
+    margin-left: -6.5px
+    margin-top: -5px
+
+  .stats_item .stats_item_descr
+    margin-top: 20px
+    line-height: 22px
+
+  .stats_item .stats_item_descr h5
+    font-size: 26px
+
+  .stats_item .stats_item_descr p
+    font-size: 13px
+
+  .pricing
+    clear: both
+    background-color: #ffffff
+    +span(1 of 1)
+    padding: 0 5%
+
+  .pricing_item
+    +span(1 of 1)
+    padding: 0
+
+  .pricing_item
+    margin-bottom: 45px
+
+  .pricing_item:not(:last-child)
+    border-right: 1px solid #e1e1e1
+
+  .about_us
+    clear: both
+    padding: 50px 0
+
+  .about_us_list
+    height: 348px
+    width: 100%
+
+  .about_us ul.slick-dots
+    bottom: 0
+
+  .about_us ul.slick-dots li
+    height: 20px
+    width: 20px
+
+  .prev_button, .next_button
+    top: 320px
+
+  .prev_button
+    left: 40px
+
+  .next_button
+    right: 40px
+
+  .team
+    +span(1 of 1)
+    padding: 0 5%
+
+  .team_item
+    +span(1 of 1)
+    padding: 0
+    margin: 0
+    margin-bottom: 10px
+
+  .team_social li
+    border-bottom: none
+
+  .team_social li:last-child
+    border-right: none
+
+  .product_wrapper
+    padding: 80px 0
+    clear: both
+    +clearfix()
+    background-image: none
+
+  .product
+    +span(1 of 1)
+    padding: 0 5%
+    +clearfix()
+
+  .product_head h3
+    font-size: 34px
+
+  .product_head h4
+    font-size: 27px
+
+  .check_list
+    +span(1 of 1)
+    padding: 0
+    margin: 0
+    margin-bottom: 30px
+
+  .check_list li:hover
+    transition: margin .2s ease
+    margin-left: 2%
+
+  .puchase_btn
+    float: none
+    display: block
+    margin: 50px auto 20px
+
+  .right_map
+    display: none
+
+  .form_section
+    +span(1 of 1)
+    padding: 0 5%
+
+  .form_section_head
+    width: 100%
+
+  .send_btn span
+    margin-left: 40px
+
+  .about_template_wrapper
+    padding: 50px 0
+
+  .about_theHam, .about_recent, .about_tags, .about_feed
+    +span(1 of 1)
+    padding: 0 5%
+
+  .about_theHam
+    text-align: center
+    margin-bottom: 50px
+
+  .about_recent
+    text-align: center
+
+  .about_recent .recent_article_img
+    width: 100%
+    height: 150px
+
+  .about_recent .recent_article_descr
+    text-align: left
+
+  .about_recent .recent_article_date
+    text-align: right
+
+  .about_feed, .about_tags
+    text-align: center
+
+  .about_tags
+    margin-bottom: 40px
+
 
